@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lightbox.min.css" />
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="bottom-header-1">
+        <div class="top-header-1">
+          <div style="border-right: 0.5px solid gray">
+            <i class="fas fa-question-circle"></i>Ask a Question
+          </div>
+          <div>
+            <i class="far fa-envelope"></i>
+            Support@codeBase.com
+          </div>
+        </div>
+        <div class="top-header-2">
+          <a href="login.html"><button>LOGIN</button></a>
+          <a href="signup.html"><button>Register</button></a>
+        </div>
+      </div>
+      <div class="bottom-header-2">
+        <img src="./images/logo.png" style="width: 120px" alt="" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="portfolio.html" class="active"
+              >Courses <i class="fas fa-chevron-down"></i
+            ></a>
+
+            <div class="dropdown-content">
+              <div>
+                <h4>Our Courses</h4>
+                <a href="portfolio.html">Courses</a>
+
+                <a href="index.html">Instructor Profile</a>
+                <a href="Event.html">UPcoming Events</a>
+                <a href="membership.html">Membership</a>
+              </div>
+              <div class="img-con">
+                <img src="./images/adv/adv.jpg" alt="" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i
+            class="fas fa-search"
+            style="border-left: 0.3px solid gray; padding-left: 1rem"
+          ></i>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////////// -->
+    <!-- Empty Section  -->
+    <section class="empty">
+      <h2>Courses</h2>
+    </section>
+    <!-- Empty Section  End-->
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- Breadcumbs Section -->
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="./index.html" class="breadcrumbs__link">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a
+          href="./portfolio.html"
+          class="breadcrumbs__link breadcrumbs__link--active"
+          >Courses</a
+        >
+      </li>
+    </ul>
+    <!-- Breadcumbs Section End-->
+    <!-- ////////////////////////////////////////////// -->
+    <!-- Pagination  -->
+
+    <section class="pagination" style="padding-right: 0">
+      <div class="left-pagination">
+        <input type="text" placeholder="Search Courses" />
+        <div class="all-courses">
+          <h2>All Courses</h2>
+          <ul>
+            <li>
+              <span class="general active" data-name="general">1: General</span>
+            </li>
+            <li>
+              <span class="general" data-name="software">2: IT & Software</span>
+            </li>
+            <li>
+              <span class="general" data-name="photography"
+                >3: Photography</span
+              >
+            </li>
+            <li>
+              <span class="general" data-name="prog-language"
+                >4: Programming Language</span
+              >
+            </li>
+            <li>
+              <span class="general" data-name="technology">5: Technology</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/adv/adv.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-pagination">
+        <div class="main-pagination image" data-name="software">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="prog-language">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="technology">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="software">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="photography">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="prog-language">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="technology">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="software">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="photography">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="prog-language">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+        <div class="main-pagination image" data-name="technology">
+          <div class="img-pagination">
+            <img src="./images/courses/pic3.jpg" alt="" />
+          </div>
+          <div class="text-pagination">
+            <h6>Introduction EduChamp - LMS plugim</h6>
+            <p>Programming</p>
+            <button class="btn btn--show-modal">Enroll Now</button>
+          </div>
+          <div class="review-pagination">
+            <div class="star">
+              <p>3 Review</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="pay">
+              <p>$190</p>
+              <h6>$120</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination End -->
+    <!-- ////////////////////////////////////////////// -->
+    <footer>
+      <div class="top-footer">
+        <img src="./images/logo.png" alt="" />
+        <div class="footer-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <a href="signup.html"><button>Join Now</button></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="common-footer bottom-footer-1">
+          <h6>Sign Up For a Newsletter</h6>
+          <p>
+            Weekly Breaking News Analysis And Cutting Edge Advices On Job
+            Searching
+          </p>
+          <div class="input-box">
+            <input type="text" placeholder="Your Email Address" />
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="common-footer bottom-footer-2">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-3">
+          <h6>Get In Touch</h6>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="Event.html">Event</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-4">
+          <h6>Courses</h6>
+          <ul>
+            <li><a href="portfolio.html">Courses</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-5">
+          <h6>Our Gallery</h6>
+          <div class="gallery">
+            <a href="./images/gallery/pic1.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic1.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic2.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic2.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic3.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic3.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic4.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic4.jpg" alt=""
+            /></a>
+          </div>
+          <div class="gallery">
+            <a href="./images/gallery/pic5.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic5.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic6.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic6.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic7.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic7.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic8.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic8.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div>@ 2021 EduChamp All Right Reserved</div>
+    </footer>
+
+    <div class="modal-1 hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Fill Out The Form to get Courses<br />
+        in just <span class="highlight">3 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>Your Name</label>
+        <input type="text" />
+        <label>Father Name</label>
+        <input type="text" />
+        <label>City</label>
+        <input type="text" />
+        <label>Phone</label>
+        <input type="number" />
+        <label>Email Address</label>
+        <input type="email" />
+        <label>Qualification</label>
+        <input type="text" />
+
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- Script  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./lightbox-plus-jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="./contact.js"></script>
+    <script>
+      // $(document).ready(function () {
+      // $(".container").isotope({
+      //   itemSelector: ".main-pagination",
+      //   layoutMode: "fitRows",
+      // });
+      // $(".pagination .left-pagination .all-courses ul li a").click(
+      //   function () {
+      //     $(".pagination .left-pagination .all-courses ul li a").removeClass(
+      //       "active"
+      //     );
+      //     $(this).addClass("active");
+      //     var selector = $(this).attr("data-filter");
+      //     $(".container").isotope({
+      //       filter: selector,
+      //     });
+      //     return false;
+      //   }
+      // );
+      // pagination button
+      // });
+      // Selecting all required elements
+      const filterItem = document.querySelector(
+        ".pagination .left-pagination .all-courses ul"
+      );
+      const filterImg = document.querySelectorAll(
+        ".pagination .right-pagination .image"
+      );
+
+      window.onload = () => {
+        // Once window loaded
+        filterItem.onclick = (selectedItem) => {
+          //When user clicked on filterItem div
+          if (selectedItem.target.classList.contains("general")) {
+            // If user click element has .item class
+            filterItem.querySelector(".active").classList.remove("active"); //remove the active which is in the first element
+            selectedItem.target.classList.add("active"); // add that active class on the user selected element or item
+            let filterName = selectedItem.target.getAttribute("data-name"); //getting data-name value of the user selected item and storing it in filter name variable
+            filterImg.forEach((image) => {
+              // console.log(image);
+              let filterImages = image.getAttribute("data-name"); //getting image data-name vaue
+              // if user seleted item data-name value is equal to main-pagination data-name value
+              // or user selected item data-name value is equal to "general"
+              if (filterImages == filterName || filterName == "general") {
+                image.classList.remove("hide");
+                image.classList.add("show");
+              } else {
+                image.classList.add("hide");
+                image.classList.remove("show");
+              }
+            });
+          }
+        };
+      };
+
+      const modal = document.querySelector(".modal-1");
+      const overlay = document.querySelector(".overlay");
+      const btnCloseModal = document.querySelector(".btn--close-modal");
+      const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
+
+      // Modal window
+
+      const openModal = function (e) {
+        e.preventDefault();
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      };
+
+      const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+      };
+
+      btnsOpenModal.forEach((btn) => {
+        btn.addEventListener("click", openModal);
+      });
+
+      for (let i = 0; i < btnsOpenModal.length; i++)
+        btnsOpenModal[i].addEventListener("click", openModal);
+
+      btnCloseModal.addEventListener("click", closeModal);
+      overlay.addEventListener("click", closeModal);
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>

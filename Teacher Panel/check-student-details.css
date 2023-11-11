@@ -1,0 +1,142 @@
+:root {
+  --primary: #026ae3;
+}
+@media screen and (max-width: 352px) {
+  .form-control small {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1072px) {
+  .single-student-description {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .left-single img {
+    width: 100%;
+    /* display: block; */
+    object-fit: cover;
+  }
+  .right-single {
+    font-size: 19px;
+  }
+}
+
+.second-none,
+.third-none {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.single-student-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  background: linear-gradient(rgba(103, 58, 183, 0.5), rgba(33, 150, 243, 0.8));
+}
+.single-student-description .left-single {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3px;
+}
+.single-student-description .left-single img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  transition: 0.3s ease;
+}
+.single-student-description .left-single img:hover {
+  transform: scale(1.13);
+}
+.single-student-description .right-single {
+  /* width: 50%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.single-student-description .right-single h1 {
+  font-weight: bold;
+  font-size: 26px;
+}
+.single-student-description .right-single h5 {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary);
+}
+.single-student-description .right-single h6 {
+  font-size: 12px;
+  color: white;
+  margin-top: 10px;
+}
+.single-student-description .right-single button {
+  padding: 8px 12px;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 13px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.single-student-description .right-single button:hover {
+  letter-spacing: 2px;
+}
+.single-course-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  width: 80%;
+}
+.single-course-details table {
+  width: 100%;
+}
+.single-course-details button {
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  transition: 0.3s ease;
+}
+.single-course-details button:hover {
+  transform: scale(1.02);
+}
+.second-none,
+.third-none {
+  display: none;
+}
+@media screen and (max-width: 405px) {
+  .second-none {
+    padding: 0;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 100%;
+    background-color: turquoise;
+  }
+  .single-student-description {
+    padding: 0px;
+    width: 100%;
+    background-color: tomato;
+    align-self: flex-start;
+  }
+  .left-single {
+    margin: 0;
+    width: 100%;
+  }
+  .left-single img {
+    width: 100%;
+  }
+  .breadcrumbs__item a {
+    white-space: normal;
+  }
+}

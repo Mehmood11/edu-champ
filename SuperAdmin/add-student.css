@@ -1,0 +1,49 @@
+:root {
+  --primary: #026ae3;
+}
+@media screen and (max-width: 790px) {
+  .form-container .form {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+  .form-container .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-container .form .form-control {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .form-container .form .form-control label,
+  .form-container .form .form-control input[type="number"],
+  .form-container .form .form-control input[type="text"],
+  .form-container .form .form-control input[type="file"],
+  .form-container .form .form-control input[type="email"],
+  .form-container .form .form-control input[type="date"],
+  .form-container .form .form-control textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 617px) {
+  .breadcrumbs {
+    padding: 2px;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .breadcrumbs h4 {
+    font-size: 10px;
+  }
+  .breadcrumbs .breadcrumbs__item {
+    padding: 0;
+  }
+  .breadcrumbs__item a {
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs__item i {
+    padding: 0;
+  }
+}

@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --primary: #026ae3;
+}
+.packages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.packages .top-packages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.packages .bottom-packages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+}
+.packages .top-packages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.packages .bottom-packages .bottom-packages-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  width: 25%;
+  /* border: 1px solid blueviolet; */
+  overflow: hidden;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
+  margin: 10px;
+}
+.packages .bottom-packages .bottom-packages-1 .h1-sup {
+  width: 100%;
+  /* border-radius: 10px; */
+  padding: 0.3rem 2rem;
+  background: linear-gradient(rgba(103, 58, 183, 0.5), rgba(33, 150, 243, 0.8));
+}
+.packages .bottom-packages .bottom-packages-1 .h1-sup h1 {
+  font-size: 5.5rem;
+  position: relative;
+  /* background-color: brown; */
+}
+.packages .bottom-packages .bottom-packages-1 .h1-sup sup {
+  font-size: 1.4rem;
+  position: relative;
+  top: -50px;
+  left: 0px;
+}
+.packages .bottom-packages .bottom-packages-1 .h1-sup .mid-sup {
+  font-size: 1.4rem;
+  position: relative;
+  top: -80px;
+  left: 0px;
+}
+.packages .bottom-packages .bottom-packages-1 .h1-sup sub {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 30px;
+}
+.packages .bottom-packages .bottom-packages-1 .text {
+  background: linear-gradient(rgba(103, 58, 183, 0.5), rgba(33, 150, 243, 0.8));
+  width: 100%;
+}
+.packages .bottom-packages .bottom-packages-1 .text h1 {
+  font-size: 20px;
+}
+.packages .bottom-packages .bottom-packages-1 .text h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.packages .bottom-packages .bottom-packages-1 .further-items {
+  width: 100%;
+}
+.packages .bottom-packages .bottom-packages-1 .further-items div {
+  padding: 10px;
+  background-color: white;
+}
+.packages .bottom-packages .bottom-packages-1 .further-items div.white,
+.packages .bottom-packages .bottom-packages-1 .further-items .btn {
+  background-color: #c1c1c1;
+  width: 100%;
+}
+.btn a button {
+  background: linear-gradient(rgba(103, 58, 183, 0.5), rgba(33, 150, 243, 0.8));
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.btn a button:hover {
+  letter-spacing: 2px;
+}
+.packages .bottom-packages .bottom-packages-medium .h1-sup h1 {
+  font-size: 9rem;
+}
+
+/* Choose us section  */
+.choose-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(
+      rgba(103, 58, 183, 0.5),
+      rgba(33, 150, 243, 0.8)
+    ),
+    url(./images/background/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem;
+}
+.choose-us .choose-us-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.choose-us .choose-us-top h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.choose-us .choose-us-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem;
+  color: black;
+}
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 5px;
+  /* box-shadow: 0 2px 7px 5px #c1c1c1; */
+}
+article.question .question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 10px;
+}
+article.question .question-text {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 10px;
+}
+button {
+  border: none;
+  outline: none;
+}
+.plus-icon i {
+  border: none;
+}
+
+/* hide text  */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+  animation: animate 0.8s ease;
+  transition: 0.3s ease;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+.right-choose-us {
+  width: 50%;
+  height: 390px;
+  background: url(./images/about/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-choose-us i {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.right-choose-us i:hover {
+  transform: rotate(270deg);
+}
+@media screen and (max-width: 1103px) {
+  .packages .bottom-packages .bottom-packages-1 .h1-sup h1 {
+    font-size: 4.3rem;
+    position: relative;
+    /* background-color: brown; */
+  }
+  .packages .bottom-packages .bottom-packages-1 .h1-sup sup {
+    font-size: 1rem;
+    position: relative;
+    top: -40px;
+    left: 0px;
+  }
+  .packages .bottom-packages .bottom-packages-1 .h1-sup .mid-sup {
+    font-size: 1rem;
+    position: relative;
+    top: -40px;
+    left: 0px;
+  }
+  .packages .bottom-packages .bottom-packages-1 .h1-sup sub {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 30px;
+  }
+  .packages .bottom-packages .bottom-packages-1 .further-items div {
+    padding: 6px;
+    font-size: 13px;
+    background-color: white;
+  }
+  .packages .bottom-packages .bottom-packages-medium .h1-sup h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 927px) {
+  .bottom-packages {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .packages .bottom-packages .bottom-packages-1 {
+    width: 70%;
+  }
+  .choose-us .choose-us-bottom {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .choose-us .choose-us-top,
+  .choose-us .choose-us-bottom .section-center,
+  .choose-us .choose-us-bottom .right-choose-us {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 807px) {
+  .bottom-packages {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .packages .bottom-packages .bottom-packages-1 {
+    width: 100%;
+  }
+  .choose-us {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .choose-us .choose-us-bottom {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .choose-us .choose-us-bottom .section-center {
+    margin: 1px;
+  }
+  .choose-us {
+    padding: 1rem;
+  }
+}

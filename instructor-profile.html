@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructor profile</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./lightbox.min.css" />
+    <link rel="stylesheet" href="./instructer-profile.css" />
+  </head>
+  <body>
+    <div
+      class="main-header"
+      style="
+        background: linear-gradient(
+          rgba(103, 58, 183, 0.5),
+          rgba(33, 150, 243, 0.8)
+        );
+      "
+    >
+      <div class="bottom-header-1">
+        <div class="top-header-1">
+          <div style="border-right: 0.5px solid gray">
+            <i class="fas fa-question-circle"></i>Ask a Question
+          </div>
+          <div>
+            <i class="far fa-envelope"></i>
+            Support@codeBase.com
+          </div>
+        </div>
+        <div class="top-header-2">
+          <a href="login.html"><button>LOGIN</button></a>
+          <a href="signup.html"><button>Register</button></a>
+        </div>
+      </div>
+      <div class="bottom-header-2">
+        <img src="./images/logo.png" style="width: 120px" alt="" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="portfolio.html" class="active">Courses <i class="fas fa-chevron-down"></i></a>
+
+            <div class="dropdown-content">
+              <div>
+                <h4>Our Courses</h4>
+                <a href="portfolio.html">Courses</a>
+               
+                <a href="#" class="active">Instructor Profile</a>
+                <a href="Event.html">UPcoming Events</a>
+                <a href="membership.html">Membership</a>
+              </div>
+              <div class="img-con">
+                <img src="./images/adv/adv.jpg" alt="" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i
+            class="fas fa-search"
+            style="border-left: 0.3px solid gray; padding-left: 1rem"
+          ></i>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////////// -->
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- Breadcumbs Section -->
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="./index.html" class="breadcrumbs__link">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="./portfolio.html" class="breadcrumbs__link">Courses</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a
+          href="./instructor-profile.html"
+          class="breadcrumbs__link breadcrumbs__link--active"
+          >Instructor Profile</a
+        >
+      </li>
+    </ul>
+    <!-- ///////////////////////////////////////////////////// -->
+    <section class="instructor">
+      <div class="left-instructor">
+        <div class="left-instructor-top">
+          <div class="image">
+            <img src="./images/profile/pic1.jpg" alt="" />
+          </div>
+          <h4>Mark Andre</h4>
+          <p>mark.example@info.com</p>
+          <div class="links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="left-instructor-bottom">
+          <div
+            id="left-instructor-bottom-1"
+            class="icons-text active"
+            target="1"
+          >
+            <i class="fas fa-book-open"></i>
+            <p>Courses</p>
+          </div>
+          <div id="left-instructor-bottom-2" class="icons-text" target="2">
+            <i class="fad fa-bookmark"></i>
+            <p>Quiz Results</p>
+          </div>
+          <div id="left-instructor-bottom-3" class="icons-text" target="3">
+            <i class="fas fa-edit"></i>
+            <p>Edit Profile</p>
+          </div>
+          <div id="left-instructor-bottom-4" class="icons-text" target="4">
+            <i class="fas fa-lock-alt"></i>
+            <p>Change password</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-instructor">
+        <div id="right-instructor_one" class="right-instructor-1 active target">
+          <div class="all-courses">
+            <h2>All Courses</h2>
+            <ul>
+              <li>
+                <span class="all active" data-name="all">All</span>
+              </li>
+              /
+              <li>
+                <span class="all" data-name="publish">Publish</span>
+              </li>
+              /
+              <li>
+                <span class="all" data-name="pending">Pending</span>
+              </li>
+            </ul>
+          </div>
+          <div class="right-pagination">
+            <div class="main-pagination image" data-name="publish">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="pending">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="publish">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <h6>Introduction EduChamp - LMS plugim</h6>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="pending">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <h6>Introduction EduChamp - LMS plugim</h6>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="publish">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="pending">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="publish">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="pending">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+            <div class="main-pagination image" data-name="publish">
+              <div class="img-pagination">
+                <img src="./images/courses/pic3.jpg" alt="" />
+              </div>
+              <div class="text-pagination">
+                <a href="details.html" style="text-decoration: none; color: black;"><h6>Introduction EduChamp - LMS plugim</h6></a>
+                <p>Programming</p>
+                <button class="btn btn--show-modal">Enroll Now</button>
+              </div>
+              <div class="review-pagination">
+                <div class="star">
+                  <p>3 Review</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="pay">
+                  <p>$190</p>
+                  <h6>$120</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="right-instructor_two" class="right-instructor-2 target">
+          <h3>Quiz Results</h3>
+          <div class="main-quiz">
+            <div class="left-quiz">
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-book-open"></i>
+                  <p>Lectures</p>
+                </div>
+                <p>8</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-question-circle"></i>
+                  <p>Quizzes</p>
+                </div>
+                <p>1</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-clock"></i>
+                  <p>Duration</p>
+                </div>
+                <p>60 Hours</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-chart-line"></i>
+                  <p>Skill Level</p>
+                </div>
+                <p>Beginner</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-language"></i>
+                  <p>Language</p>
+                </div>
+                <p>English</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="fad fa-user"></i>
+                  <p>Students</p>
+                </div>
+                <p>32</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="fad fa-check-square"></i>
+                  <p>Assessments</p>
+                </div>
+                <p>Yes</p>
+              </div>
+            </div>
+            <div class="right-quiz">
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-book-open"></i>
+                  <p>Lectures</p>
+                </div>
+                <p>8</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-question-circle"></i>
+                  <p>Quizzes</p>
+                </div>
+                <p>1</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-clock"></i>
+                  <p>Duration</p>
+                </div>
+                <p>60 Hours</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-chart-line"></i>
+                  <p>Skill Level</p>
+                </div>
+                <p>Beginner</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="far fa-language"></i>
+                  <p>Language</p>
+                </div>
+                <p>English</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="fad fa-user"></i>
+                  <p>Students</p>
+                </div>
+                <p>32</p>
+              </div>
+              <div class="left-quiz-1">
+                <div class="icon-text">
+                  <i class="fad fa-check-square"></i>
+                  <p>Assessments</p>
+                </div>
+                <p>Yes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="right-instructor_three" class="right-instructor-3 target">
+          <h3>Edit Profile</h3>
+          <div class="main-edit">
+            <div class="main-edit-1">
+              <h4>1.Personal Details</h4>
+              <form action="" class="form" id="form">
+                <div class="form-control">
+                  <label for="">Name</label>
+                  <div>
+                  <div style="width: 100%;">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      id="username"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div id="usercheck"></div>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Occupation</label>
+                  <div>
+                    <input type="text" placeholder="CTO" autocomplete="off" />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Company</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Company Name"
+                      autocomplete="off"
+                    />
+                    <p>
+                      If You want your invoices addressed to a company. Leave
+                      blank to use your Full Name.
+                    </p>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Phone.</label>
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="Your Phone Num"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="main-edit-1">
+              <h4>2. Address</h4>
+              <form action="" class="form" id="form">
+                <div class="form-control">
+                  <label for="">Address</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Address"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">City</label>
+                  <div>
+                    <input type="text" placeholder="City" autocomplete="off" />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">State</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your State"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Postcode</label>
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="000202"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="main-edit-1">
+              <h4>3. Social Links</h4>
+              <form action="" class="form" id="form">
+                <div class="form-control">
+                  <label for="">Linkedin</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="www.linkedin.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Facebook</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="www.facebook.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Twitter</label>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="www.twitter.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="">Instagram</label>
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="www.instagram.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="main-edit-buttons">
+              <a href="#"><button id="btn" class="submit">Save Changes</button></a>
+              <a href="#"><button id="btn-2">Cancel</button></a>
+            </div>
+          </div>
+        </div>
+        <div id="right-instructor_four" class="right-instructor-4 target">
+            <h3>Change Password</h3>
+            <div class="main-edit">
+              <div class="main-edit-1">
+                <h4>Password</h4>
+                <form action="" class="form" id="form">
+                  <div class="form-control">
+                    <label for="">Current Password</label>
+                    <div>
+                      <input
+                        type="password"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="">New Password</label>
+                    <div>
+                      <input
+                        type="password"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="">Re-Type New Password</label>
+                    <div>
+                      <input
+                        type="password"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="main-edit-buttons">
+                <a href="#"><button id="btn">Save Changes</button></a>
+                <a href="#"><button id="btn-2">Cancel</button></a>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////// -->
+    <footer>
+      <div class="top-footer">
+        <img src="./images/logo.png" alt="" />
+        <div class="footer-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <a href="signup.html"><button>Join Now</button></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="common-footer bottom-footer-1">
+          <h6>Sign Up For a Newsletter</h6>
+          <p>
+            Weekly Breaking News Analysis And Cutting Edge Advices On Job
+            Searching
+          </p>
+          <div class="input-box">
+            <input type="text" placeholder="Your Email Address" />
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="common-footer bottom-footer-2">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-3">
+          <h6>Get In Touch</h6>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="Event.html">Event</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-4">
+          <h6>Courses</h6>
+          <ul>
+            <li><a href="portfolio.html">Courses</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="common-footer bottom-footer-5">
+          <h6>Our Gallery</h6>
+          <div class="gallery">
+            <a href="./images/gallery/pic1.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic1.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic2.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic2.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic3.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic3.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic4.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic4.jpg" alt=""
+            /></a>
+          </div>
+          <div class="gallery">
+            <a href="./images/gallery/pic5.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic5.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic6.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic6.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic7.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic7.jpg" alt=""
+            /></a>
+            <a href="./images/gallery/pic8.jpg" data-lightbox="mygallery"
+              ><img src="./images/gallery/pic8.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div>@ 2021 EduChamp All Right Reserved</div>
+    </footer>
+
+    <div class="modal-1 hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Fill Out The Form to get Courses<br />
+        in just <span class="highlight">3 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>Your Name</label>
+        <input type="text" />
+        <label>Father Name</label>
+        <input type="text" />
+         <label>City</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <label>Phone</label>
+        <input type="number" />
+         <label>Qualification</label>
+        <input type="text" />
+
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- script  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./lightbox-plus-jquery.min.js"></script>
+    <script src="./login.js"></script>
+    <script src="./instructor.js"></script>
+    <script>
+       const modal = document.querySelector('.modal-1');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+      // Modal window
+
+const openModal = function (e) {
+  e.preventDefault();
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+btnsOpenModal.forEach(btn => {
+  btn.addEventListener('click', openModal);
+});
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener('click', openModal);
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
+    </script>
+  </body>
+</html>

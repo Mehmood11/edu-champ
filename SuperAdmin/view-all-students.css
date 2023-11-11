@@ -1,0 +1,118 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #026ae3;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  background: linear-gradient(rgba(103, 58, 183, 0.5), rgba(33, 150, 243, 0.8));
+  text-align: left;
+  background-color: var(--primary);
+}
+table thead th {
+  border: 1px solid gray;
+  font-variant: small-caps;
+  font-weight: 600;
+  vertical-align: top;
+  padding: 2px 12px;
+}
+table tbody {
+  width: auto;
+  margin: 0;
+  /* background: linear-gradient(rgba(103, 58, 183, 0.2), rgba(33, 150, 243, 0.2)); */
+}
+table tbody tr {
+  text-align: left;
+  /* color: black; */
+  border: 1px solid black;
+  margin-top: 10px;
+}
+table tbody tr td {
+  border: 1px solid black;
+  font-size: 11px;
+  color: black;
+  font-weight: 500;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+table tbody tr td i {
+  font-size: 14px;
+  padding: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+table tbody tr td i:hover {
+  transform: scale(1.23);
+}
+table tbody tr td a button {
+  font-size: 14px;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 4px 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+table tbody tr td a button:hover {
+  background-color: white;
+  color: green;
+}
+@media screen and (max-width: 1406px) {
+  td,
+  th {
+    padding: 3px;
+  }
+}
+@media screen and (max-width: 1246px) {
+  table thead {
+    display: none;
+  }
+  table,
+  table tbody,
+  table tbody tr,
+  table tbody td {
+    display: block;
+    width: 100%;
+    /* font-size: 15px; */
+  }
+  table tbody tr {
+    margin-top: 20px;
+  }
+  table tbody tr td {
+    text-align: right;
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+  table tbody tr td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 20%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    /* background-color: var(--primary); */
+    color: var(--primary);
+    white-space: nowrap;
+  }
+  table {
+    background: none;
+  }
+}
+@media screen and (max-width: 435px) {
+  table tbody tr,
+  table tbody tr td,
+  table tbody tr td:before {
+    font-size: 13px;
+  }
+}

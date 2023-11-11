@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- <link rel="stylesheet" href="./contact.css" /> -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./add-new-course.css" />
+    <link rel="stylesheet" href="add-student.css" />
+    <link rel="stylesheet" href="edit-profile.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <span class="logo_name"
+          ><a href="dashboard.html"
+            ><img src="./images/logo-white-2.png" alt="" /></a
+        ></span>
+        <img
+          src="./images/logo (2).png"
+          alt=""
+          class="second-img"
+          style="width: 35px"
+        />
+      </div>
+      <ul class="nav-links .items">
+        <li>
+          <a href="dashboard.html"
+            ><i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fab fa-discourse"></i>
+              <span class="link_name">Course</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Courses</a></li>
+            <li>
+              <a href="./add-new-course.html" class="icon-text">Add New</a>
+            </li>
+            <li>
+              <a href="./all-courses.html" class="icon-text"
+                >View All Courses</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-users-class"></i>
+              <span class="link_name">Student Details</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="#">Student Details</a>
+            </li>
+            <li>
+              <a href="add-student.html">Add Student</a>
+            </li>
+            <li>
+              <a href="view-all-students.html">View All Student</a>
+            </li>
+            <li>
+              <div class="icon-link">
+                <a href="#"> <span class="link_name">Set Batch Code</span></a>
+                <i class="bx bxs-chevron-down arrow1"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="#">Set Batch Code</a></li>
+                <li>
+                  <a href="set-batch-code.html">Add New Batch</a>
+                </li>
+                <li>
+                  <a href="change-student-batch.html">Change Student Batch</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="check-student-details.html">Check Student Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="far fa-clipboard-user"></i>
+              <span class="link_name">Attandance</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Attandance</a></li>
+            <li>
+              <a href="check-student-attandance.html"
+                >Check Student Attandance</a
+              >
+            </li>
+            <li>
+              <a href="mark-attandance.html">Mark Attandance</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-chalkboard-teacher"></i>
+              <span class="link_name">Faculty</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Faculty</a></li>
+            <li>
+              <a href="add-new-course.html">Add New</a>
+            </li>
+            <li>
+              <a href="view-all-faculty.html">View All</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="#"
+            ><i class="bx bx-book-bookmark"></i>
+            <span class="link_name">Bookmarks</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Bookmarks</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-message-rounded-dots"></i>
+            <span class="link_name">Review</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Review</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-list-ol"></i>
+            <span class="link_name">Add listing</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Add listing</a></li>
+          </ul>
+        </li> -->
+        <li class="active showMenu">
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-user-circle"></i>
+              <span class="link_name">My Profile</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">My Profile</a></li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="edit-profile.html" class="active">Edit Profile</a>
+            </li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="view-profile.html">View Profile</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="./images/profile/pic1.jpg" alt="" />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Khan</div>
+              <div class="job">Web designer</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <div class="logo-img">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <ul class="short-menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Quick Menu</a>
+            <i class="bx bxs-chevron-down arrow"></i>
+
+            <div class="dropdown-content">
+              <a href="#">Our Courses</a>
+              <a href="#">New Events</a>
+              <a href="#">Membership</a>
+            </div>
+          </li>
+        </ul>
+        <div class="search-bell-account-grid">
+          <div class="search">
+            <i class="bx bx-search-alt-2"></i>
+          </div>
+          <div class="bell">
+            <i class="bx bxs-bell"></i>
+          </div>
+          <div class="account">
+            <img src="./images/profile/pic1.jpg" alt="" />
+          </div>
+          <div class="grid">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+        <!-- <span class="text">Drop Down Sidebar</span> -->
+
+        <div class="search-bar">
+          <div class="input-search">
+            <input type="text" placeholder="Search Something..." />
+            <i class="bx bx-right-arrow-alt" style="cursor: pointer"></i>
+          </div>
+          <i class="bx bx-message-square-x bx" style="cursor: pointer"></i>
+        </div>
+        <div class="grid-section">
+          <div class="grid-1 same-grid">
+            <i class="bx bxs-music"></i>
+            <p>Music</p>
+          </div>
+          <div class="grid-2 same-grid">
+            <i class="bx bxl-youtube"></i>
+            <p>Videos</p>
+          </div>
+          <div class="grid-3 same-grid">
+            <i class="bx bx-envelope"></i>
+            <p>Emails</p>
+          </div>
+          <div class="grid-4 same-grid">
+            <i class="bx bx-book-bookmark"></i>
+            <p>Reports</p>
+          </div>
+          <div class="grid-5 same-grid">
+            <i class="bx bx-happy"></i>
+            <p>Persons</p>
+          </div>
+          <div class="grid-6 same-grid">
+            <i class="bx bx-image"></i>
+            <p>Pictures</p>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="top-notification">
+            <h4>9 New</h4>
+            <p>User Notification</p>
+          </div>
+          <div class="bottom-notification">
+            <div class="same-notification">
+              <i class="bx bx-check"></i>
+              <p><b>Sneha Jogi</b> sent you a message.</p>
+              <div>
+                <i class="bx bxs-x-circle"></i>
+                <p>02:14</p>
+              </div>
+            </div>
+            <div class="same-notification">
+              <i class="bx bx-cart" style="background-color: orange"></i>
+              <p><b>Your order is placed</b> sent you a message.</p>
+              <div>
+                <i class="bx bxs-x-circle"></i>
+                <p>7 Min</p>
+              </div>
+            </div>
+            <div class="same-notification">
+              <i
+                class="fas fa-bullhorn"
+                style="background-color: darkorchid"
+              ></i>
+              <p><b>Your item is shipped</b> sent you a message.</p>
+              <div>
+                <i class="bx bxs-x-circle"></i>
+                <p>2 May</p>
+              </div>
+            </div>
+            <div class="same-notification">
+              <i
+                class="far fa-comments"
+                style="background-color: darkseagreen"
+              ></i>
+              <p><b>Sneha Jogi</b> sent you a message.</p>
+              <div>
+                <i class="bx bxs-x-circle"></i>
+                <p>14 July</p>
+              </div>
+            </div>
+            <div class="same-notification" style="border-bottom: none">
+              <i class="far fa-file-word" style="background-color: purple"></i>
+              <p><b>Sneha Jogi</b> sent you a message.</p>
+              <div>
+                <i class="bx bxs-x-circle"></i>
+                <p>15 Min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="account-section">
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ///////////////////////////////////////////// -->
+      <div class="dashboard-section dashboa-section-1">
+        <!-- Breadcumbs Section -->
+        <ul class="breadcrumbs">
+          <h4>My Profile</h4>
+          <li class="breadcrumbs__item">
+            <a href="./dashboard.html" class="breadcrumbs__link">
+              <i class="bx bx-home"></i>
+              Home</a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <a
+              href="./add-new-course.html"
+              class="breadcrumbs__link breadcrumbs__link--active"
+              >Edit Profile</a
+            >
+          </li>
+        </ul>
+        <!-- Breadcumbs Section End-->
+        <!-- ////////////////////////////////////////////// -->
+        <div class="form-container">
+          <div class="title">
+            <h5><b>Edit</b> Profile</h5>
+          </div>
+
+          <form action="" class="form">
+            <br />
+            <h2>1. Personal Details</h2>
+            <br />
+            <div class="form-control">
+              <label for="">Full Name:</label>
+              <input type="text" placeholder="Mark Andrea" id="name" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Occupation:</label>
+              <input type="text" placeholder="CTO" id="occupation" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Company Name:</label>
+              <div class="input-p">
+                <input type="text" placeholder="EduChamp" />
+                <p>
+                  If you want your invoices addressed to a company. Leave blank
+                  to use your full name.
+                </p>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="">Phone No:</label>
+              <input type="text" placeholder="+921323233233 3" id="phone" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <br /><br />
+            <h2>2. Address</h2>
+            <br />
+            <div class="form-control">
+              <label for="">Address:</label>
+              <input type="text" placeholder="Address" id="address" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">City:</label>
+              <input type="text" placeholder="City" id="city" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">State:</label>
+              <input type="text" placeholder="State" id="state" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Postcode:</label>
+              <input type="number" placeholder="Postcode" id="postcode" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <br /><br />
+
+            <h2>3. Social Links</h2>
+            <br />
+            <div class="form-control">
+              <label for="">Linkedin:</label>
+              <input type="text" placeholder="www.linkedin.com" />
+            </div>
+            <div class="form-control">
+              <label for="">Facebook:</label>
+              <input type="text" placeholder="www.facebook.com" />
+            </div>
+            <div class="form-control">
+              <label for="">Twitter:</label>
+              <input type="text" placeholder="www.twitter.com" />
+            </div>
+            <div class="form-control">
+              <label for="">Instagram:</label>
+              <input type="number" placeholder="www.instagram.com" />
+            </div>
+            <div class="buttons">
+              <button class="btn">Save Changes</button>
+              <button class="btn2">Cancel</button>
+            </div>
+            <br /><br />
+
+            <h2>4. Password</h2>
+            <br />
+            <div class="form-control">
+              <label for="">Current Password:</label>
+              <input
+                type="text"
+                placeholder="Current Password"
+                id="password1"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">New Password:</label>
+              <input type="text" placeholder="New Password" id="password2" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Re Type Password:</label>
+              <input
+                type="text"
+                placeholder="Re type Password"
+                id="password3"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="buttons">
+              <button class="btn">Save Changes</button>
+              <button class="btn2">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+    <script>
+      const links_btn = document.querySelectorAll(".icon-text");
+      links_btn.forEach((links) => {
+        links.addEventListener("click", function () {
+          links_btn.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      const form1 = document.querySelector(".form");
+      const name = document.getElementById("name");
+      const occupation = document.getElementById("occupation");
+      const phone = document.getElementById("phone");
+      const address = document.getElementById("address");
+      const city = document.getElementById("city");
+      const state = document.getElementById("state");
+      const postcode = document.getElementById("postcode");
+      const password1 = document.getElementById("password1");
+      const password2 = document.getElementById("password2");
+      const password3 = document.getElementById("password3");
+
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        checkInputs();
+      });
+
+      function checkInputs() {
+        //get the values from the inputs
+        const nameValue = name.value.trim();
+        const occupationValue = occupation.value.trim();
+        const phoneValue = phone.value.trim();
+        const addressValue = address.value.trim();
+        const cityValue = city.value.trim();
+        const stateValue = state.value.trim();
+        const postcodeValue = postcode.value.trim();
+        const password1Value = password1.value.trim();
+        const password2Value = password2.value.trim();
+        const password3Value = password3.value.trim();
+
+        if (nameValue === "") {
+          //show error
+          //add error class
+          setErrorFor(name, "Full Name should be correct");
+        } else {
+          // add success class
+          setSuccessFor(name);
+        }
+        if (occupationValue === "") {
+          //show error
+          //add error class
+          setErrorFor(occupation, "occupation cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(occupation);
+        }
+        if (phoneValue === "") {
+          //show error
+          //add error class
+          setErrorFor(phone, "phone cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(phone);
+        }
+        if (addressValue === "") {
+          //show error
+          //add error class
+          setErrorFor(address, "Address cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(address);
+        }
+        if (cityValue === "") {
+          //show error
+          //add error class
+          setErrorFor(city, "city cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(city);
+        }
+        if (stateValue === "") {
+          //show error
+          //add error class
+          setErrorFor(state, "state cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(state);
+        }
+        if (postcodeValue === "") {
+          //show error
+          //add error class
+          setErrorFor(postcode, "postcode should be valid");
+        } else {
+          // add success class
+          setSuccessFor(postcode);
+        }
+        if (password1Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password1, "password cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(password1);
+        }
+        if (password2Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password2, "New password cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(password2);
+        }
+        if (password3Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password3, "Re Type password cannot be blank");
+        } else if (password2Value !== password3Value) {
+          setErrorFor(password3, "Passwords does not match");
+        } else {
+          setSuccessFor(password3);
+        }
+      }
+
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement; //.form-control
+        const small = formControl.querySelector("small");
+
+        // add error message inside small
+        small.innerText = message;
+
+        // add error class
+        formControl.className = "form-control error";
+      }
+
+      function setSuccessFor(input) {
+        const formControl = input.parentElement; //.form-control
+        formControl.className = "form-control success";
+      }
+    </script>
+  </body>
+</html>

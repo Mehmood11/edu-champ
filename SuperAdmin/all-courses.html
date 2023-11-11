@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Courses</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- <link rel="stylesheet" href="./contact.css" /> -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./all.course.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <span class="logo_name"
+          ><a href="dashboard.html"
+            ><img src="./images/logo-white-2.png" alt="" /></a
+        ></span>
+        <a href="dashboard.html"
+          ><img
+            src="./images/logo (2).png"
+            alt=""
+            class="second-img"
+            style="width: 35px"
+        /></a>
+      </div>
+      <ul class="nav-links .items">
+        <li>
+          <a href="dashboard.html"
+            ><i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span></a
+          >
+          <!-- <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Category</a></li>
+
+          </ul> -->
+        </li>
+        <li class="active showMenu">
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fab fa-discourse"></i>
+              <span class="link_name">Course</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Courses</a></li>
+            <li>
+              <a href="./add-new-course.html" class="icon-text">Add New</a>
+            </li>
+            <li>
+              <a href="./all-courses.html" class="icon-text active"
+                >View All Courses</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-users-class"></i>
+              <span class="link_name">Student Details</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="#">Student Details</a>
+            </li>
+            <li>
+              <a href="add-student.html">Add Student</a>
+            </li>
+            <li>
+              <a href="view-all-students.html">View All Student</a>
+            </li>
+            <li>
+              <div class="icon-link">
+                <a href="#"> <span class="link_name">Set Batch Code</span></a>
+                <i class="bx bxs-chevron-down arrow1"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="#">Set Batch Code</a></li>
+                <li>
+                  <a href="set-batch-code.html">Add New Batch</a>
+                </li>
+                <li>
+                  <a href="change-student-batch.html">Change Student Batch</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="check-student-details.html">Check Student Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="far fa-clipboard-user"></i>
+              <span class="link_name">Attandance</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Attandance</a></li>
+            <li>
+              <a href="#">Check Student Attandance</a>
+            </li>
+            <li>
+              <a href="#">Mark Attandance</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-chalkboard-teacher"></i>
+              <span class="link_name">Faculty</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Faculty</a></li>
+            <li>
+              <a href="add.new-faculty.html">Add New</a>
+            </li>
+            <li>
+              <a href="view-all-faculty.html">View All</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="#"
+            ><i class="bx bx-book-bookmark"></i>
+            <span class="link_name">Bookmarks</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Bookmarks</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-message-rounded-dots"></i>
+            <span class="link_name">Review</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Review</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-list-ol"></i>
+            <span class="link_name">Add listing</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Add listing</a></li>
+          </ul>
+        </li> -->
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-user-circle"></i>
+              <span class="link_name">My Profile</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">My Profile</a></li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="edit-profile.html">Edit Profile</a>
+            </li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="#">View Profile</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="./images/profile/pic1.jpg" alt="" />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Khan</div>
+              <div class="job">Web designer</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <div class="logo-img">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <ul class="short-menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Quick Menu</a>
+            <i class="bx bxs-chevron-down arrow"></i>
+
+            <div class="dropdown-content">
+              <a href="#">Our Courses</a>
+              <a href="#">New Events</a>
+              <a href="#">Membership</a>
+            </div>
+          </li>
+        </ul>
+        <div class="search-bell-account-grid">
+          <div class="search">
+            <i class="bx bx-search-alt-2"></i>
+          </div>
+          <div class="bell">
+            <i class="bx bxs-bell"></i>
+          </div>
+          <div class="account">
+            <img src="./images/profile/pic1.jpg" alt="" />
+          </div>
+          <div class="grid">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+        <!-- <span class="text">Drop Down Sidebar</span> -->
+
+        <div class="search-bar">
+          <div class="input-search">
+            <input type="text" placeholder="Search Something..." />
+            <i class="bx bx-right-arrow-alt" style="cursor: pointer"></i>
+          </div>
+          <i class="bx bx-message-square-x bx" style="cursor: pointer"></i>
+        </div>
+        <div class="grid-section">
+          <div class="grid-1 same-grid">
+            <i class="bx bxs-music"></i>
+            <p>Music</p>
+          </div>
+          <div class="grid-2 same-grid">
+            <i class="bx bxl-youtube"></i>
+            <p>Videos</p>
+          </div>
+          <div class="grid-3 same-grid">
+            <i class="bx bx-envelope"></i>
+            <p>Emails</p>
+          </div>
+          <div class="grid-4 same-grid">
+            <i class="bx bx-book-bookmark"></i>
+            <p>Reports</p>
+          </div>
+          <div class="grid-5 same-grid">
+            <i class="bx bx-happy"></i>
+            <p>Persons</p>
+          </div>
+          <div class="grid-6 same-grid">
+            <i class="bx bx-image"></i>
+            <p>Pictures</p>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="top-notification">
+            <h4>9 New</h4>
+            <p>User Notification</p>
+          </div>
+          <div class="bottom-notification">
+            <a href="#"
+              ><div class="same-notification">
+                <i class="bx bx-check"></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>02:14</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification">
+                <i class="bx bx-cart" style="background-color: orange"></i>
+                <p><b>Your order is placed</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>7 Min</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#"
+              ><div class="same-notification">
+                <i
+                  class="fas fa-bullhorn"
+                  style="background-color: darkorchid"
+                ></i>
+                <p><b>Your item is shipped</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>2 May</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification">
+                <i
+                  class="far fa-comments"
+                  style="background-color: darkseagreen"
+                ></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>14 July</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification" style="border-bottom: none">
+                <i
+                  class="far fa-file-word"
+                  style="background-color: purple"
+                ></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>15 Min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="account-section">
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ///////////////////////////////////////////// -->
+      <div>
+        <!-- Breadcumbs Section -->
+        <ul class="breadcrumbs">
+          <h4>Courses</h4>
+          <li class="breadcrumbs__item">
+            <a href="./index.html" class="breadcrumbs__link">
+              <i class="bx bx-home"></i>
+              Home</a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <a
+              href="./all-courses.html"
+              class="breadcrumbs__link breadcrumbs__link--active"
+              >All Courses</a
+            >
+          </li>
+        </ul>
+        <!-- Breadcumbs Section End-->
+        <!-- ////////////////////////////////////////////// -->
+        <div class="all-courses-section">
+          <div class="title">
+            <h5><b>All </b>Courses</h5>
+            <div class="search-div">
+              <input type="text" placeholder="search here.." />
+              <i class="bx bx-search-alt-2"></i>
+            </div>
+          </div>
+          <div class="all-courses">
+            <div class="page-course-1 target same-course-class">
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic2.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic3.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic4.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-course-2 target same-course-class">
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic5.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic6.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic7.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-course-3 target same-course-class">
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic8.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic9.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course-1">
+                <div class="left-course">
+                  <img src="./images/gallery/pic1.jpg" alt="" />
+                </div>
+                <div class="right-course">
+                  <h1>Become a PHP Master and Make Money</h1>
+                  <div class="mix-course">
+                    <div class="teacher">
+                      <img src="./images/profile/pic1.jpg" alt="" />
+                      <div class="p-div">
+                        <h6 style="color: gray">Teacher</h6>
+                        <p>Keny White</p>
+                      </div>
+                    </div>
+                    <div class="course-category">
+                      <h6 style="color: gray">3 Category</h6>
+                      <p>BACKEND</p>
+                    </div>
+                    <div class="course-review">
+                      <h6 style="color: gray">3 Review</h6>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <h6>$190</h6>
+                      <p>$120</p>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor id, temporibus voluptas maxime esse placeat, numquam
+                    tempora repellat similique vel corporis recusandae deleniti,
+                    porro fuga voluptate. Optio doloribus sequi cumque
+                    voluptatibus molestiae! Quos quas distinctio eligendi sint
+                    magni sed fugit sapiente expedita molestiae repellat, sequi
+                    dolor nisi eum dolore! Cupiditate.
+                  </div>
+                  <div class="button">
+                    <a href="#"
+                      ><button style="background-color: green" class="approve">
+                        Approve
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: blue">Edit</button></a
+                    >
+                    <a href="#"
+                      ><button style="background-color: red">Cancel</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a class="prev faucets" onclick="showPrev()">Prev</a>
+            <a class="single active" id="first" target="1">1</a>
+            <a class="single" id="second" target="2">2</a>
+            <a class="single" id="third" target="3">3</a>
+            <a class="prev" onclick="showNext()">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+    <script>
+      const links_btn = document.querySelectorAll(".icon-text");
+      links_btn.forEach((links) => {
+        links.addEventListener("click", function () {
+          links_btn.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+      const pagination_btn = document.querySelectorAll(".single");
+      pagination_btn.forEach((links) => {
+        links.addEventListener("click", function () {
+          pagination_btn.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      var visibleDiv = 0;
+      function showDiv() {
+        $(".same-course-class").hide();
+        $(".same-course-class:eq(" + visibleDiv + ")").show();
+      }
+      showDiv();
+
+      function showNext() {
+        if (visibleDiv == $(".same-course-class").length - 1) {
+          visibleDiv = 0;
+        } else {
+          visibleDiv++;
+        }
+        showDiv();
+      }
+      function showPrev() {
+        if (visibleDiv === 0) {
+          visibleDiv = $(".same-course-class").length - 1;
+        } else {
+          visibleDiv--;
+        }
+        showDiv();
+      }
+
+      // const approved = document.querySelectorAll(".approve");
+      // approved.addEventListener("click", function () {
+      //  this.forEach(el => {
+      //     if ((this.innerHTML = "Approve")) {
+      //     this.innerHTML = "active";
+      //   } else {
+      //     this.innerHTML = "Approve";
+      //   }
+      //  });
+      // });
+      const btns = document.getElementsByClassName("approve");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          if ((this.innerHTML = "Approve")) {
+            this.innerHTML = "Active";
+          } else {
+            this.innerHTML = "Approve";
+          }
+        });
+      }
+      $(document).ready(function () {
+        $(window).on("load", function () {
+          // console.log("hi");
+          $(".page-course-2").hide();
+          $(".page-course-3").hide();
+        });
+        $(".single").click(function () {
+          $(".target").hide();
+          $(".page-course-" + $(this).attr("target")).show();
+        });
+      });
+    </script>
+  </body>
+</html>

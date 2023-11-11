@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Faculty</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- <link rel="stylesheet" href="./contact.css" /> -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="./add-new-course.css" />
+    <link rel="stylesheet" href="add-student.css" />
+    <link rel="stylesheet" href="set-batch-code.css" />
+    <!-- <link rel="stylesheet" href="view-all-students.css" /> -->
+    <link rel="stylesheet" href="check-student-details.css" />
+    <link rel="stylesheet" href="add-new-faculty.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <span class="logo_name"
+          ><a href="dashboard.html"
+            ><img src="./images/logo-white-2.png" alt="" /></a
+        ></span>
+        <a href="dashboard.html"
+          ><img
+            src="./images/logo (2).png"
+            alt=""
+            class="second-img"
+            style="width: 35px"
+        /></a>
+      </div>
+      <ul class="nav-links .items">
+        <li>
+          <a href="dashboard.html"
+            ><i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fab fa-discourse"></i>
+              <span class="link_name">Course</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Courses</a></li>
+            <li>
+              <a href="./add-new-course.html" class="icon-text">Add New</a>
+            </li>
+            <li>
+              <a href="./all-courses.html" class="icon-text"
+                >View All Courses</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-users-class"></i>
+              <span class="link_name">Student Details</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="#">Student Details</a>
+            </li>
+            <li>
+              <a href="add-student.html">Add Student</a>
+            </li>
+            <li>
+              <a href="view-all-students.html">View All Student</a>
+            </li>
+            <li>
+              <div class="icon-link">
+                <a href="#"> <span class="link_name">Set Batch Code</span></a>
+                <i class="bx bxs-chevron-down arrow1"></i>
+              </div>
+              <ul class="sub-menu">
+                <li>
+                  <a class="link_name" href="">Set Batch Code</a>
+                </li>
+                <li>
+                  <a href="set-batch-code.html">Add New Batch</a>
+                </li>
+                <li>
+                  <a href="change-student-batch.html">Change Student Batch</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="check-student-details.html">Check Student Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="far fa-clipboard-user"></i>
+              <span class="link_name">Attandance</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Attandance</a></li>
+            <li>
+              <a href="check-student-attandance.html"
+                >Check Student Attandance</a
+              >
+            </li>
+            <li>
+              <a href="mark-attandance.html">Mark Attandance</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active showMenu">
+          <div class="icon-link">
+            <a href="#"
+              ><i class="fas fa-chalkboard-teacher"></i>
+              <span class="link_name">Faculty</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Faculty</a></li>
+            <li>
+              <a href="add.new-faculty.html" class="active">Add New</a>
+            </li>
+            <li>
+              <a href="view-all-faculty.html">View All</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="#"
+            ><i class="bx bx-book-bookmark"></i>
+            <span class="link_name">Bookmarks</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Bookmarks</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-message-rounded-dots"></i>
+            <span class="link_name">Review</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Review</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-list-ol"></i>
+            <span class="link_name">Add listing</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Add listing</a></li>
+          </ul>
+        </li> -->
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-user-circle"></i>
+              <span class="link_name">My Profile</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">My Profile</a></li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="edit-profile.html">Edit Profile</a>
+            </li>
+            <li id="dashboard-8" class="icon-text" target="8">
+              <a href="#">View Profile</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="./images/profile/pic1.jpg" alt="" />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Khan</div>
+              <div class="job">Web designer</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <div class="logo-img">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <ul class="short-menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Quick Menu</a>
+            <i class="bx bxs-chevron-down arrow"></i>
+
+            <div class="dropdown-content">
+              <a href="#">Our Courses</a>
+              <a href="#">New Events</a>
+              <a href="#">Membership</a>
+            </div>
+          </li>
+        </ul>
+        <div class="search-bell-account-grid">
+          <div class="search">
+            <i class="bx bx-search-alt-2"></i>
+          </div>
+          <div class="bell">
+            <i class="bx bxs-bell"></i>
+          </div>
+          <div class="account">
+            <img src="./images/profile/pic1.jpg" alt="" />
+          </div>
+          <div class="grid">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+        <!-- <span class="text">Drop Down Sidebar</span> -->
+
+        <div class="search-bar">
+          <div class="input-search">
+            <input type="text" placeholder="Search Something..." />
+            <i class="bx bx-right-arrow-alt" style="cursor: pointer"></i>
+          </div>
+          <i class="bx bx-message-square-x bx" style="cursor: pointer"></i>
+        </div>
+        <div class="grid-section">
+          <div class="grid-1 same-grid">
+            <i class="bx bxs-music"></i>
+            <p>Music</p>
+          </div>
+          <div class="grid-2 same-grid">
+            <i class="bx bxl-youtube"></i>
+            <p>Videos</p>
+          </div>
+          <div class="grid-3 same-grid">
+            <i class="bx bx-envelope"></i>
+            <p>Emails</p>
+          </div>
+          <div class="grid-4 same-grid">
+            <i class="bx bx-book-bookmark"></i>
+            <p>Reports</p>
+          </div>
+          <div class="grid-5 same-grid">
+            <i class="bx bx-happy"></i>
+            <p>Persons</p>
+          </div>
+          <div class="grid-6 same-grid">
+            <i class="bx bx-image"></i>
+            <p>Pictures</p>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="top-notification">
+            <h4>9 New</h4>
+            <p>User Notification</p>
+          </div>
+          <div class="bottom-notification">
+            <a href="#"
+              ><div class="same-notification">
+                <i class="bx bx-check"></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>02:14</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification">
+                <i class="bx bx-cart" style="background-color: orange"></i>
+                <p><b>Your order is placed</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>7 Min</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#"
+              ><div class="same-notification">
+                <i
+                  class="fas fa-bullhorn"
+                  style="background-color: darkorchid"
+                ></i>
+                <p><b>Your item is shipped</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>2 May</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification">
+                <i
+                  class="far fa-comments"
+                  style="background-color: darkseagreen"
+                ></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>14 July</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="same-notification" style="border-bottom: none">
+                <i
+                  class="far fa-file-word"
+                  style="background-color: purple"
+                ></i>
+                <p><b>Sneha Jogi</b> sent you a message.</p>
+                <div>
+                  <i class="bx bxs-x-circle"></i>
+                  <p>15 Min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="account-section">
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ///////////////////////////////////////////// -->
+      <div class="dashboard-section dashboa-section-1">
+        <!-- Breadcumbs Section -->
+        <ul class="breadcrumbs">
+          <h4>Faculty</h4>
+          <li class="breadcrumbs__item">
+            <a href="./dashboard.html" class="breadcrumbs__link">
+              <i class="bx bx-home"></i>
+              Home</a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <a
+              href="./add.new-faculty.html"
+              class="breadcrumbs__link breadcrumbs__link--active"
+              >Add New</a
+            >
+          </li>
+        </ul>
+        <!-- Breadcumbs Section End-->
+        <!-- ////////////////////////////////////////////// -->
+        <div class="form-container">
+          <div class="title">
+            <h5><b> Add New</b> Faculty</h5>
+            <!-- <div class="search-div">
+              <input type="text" placeholder="search here.." />
+              <i class="bx bx-search-alt-2"></i>
+            </div> -->
+          </div>
+          <form action="" class="form">
+            <div class="form-control">
+              <label for="">Full Name:</label>
+              <input type="text" placeholder="Full Name" id="username" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Father Name:</label>
+              <input type="text" placeholder="Father Name" id="password" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Phone no:</label>
+              <input type="text" placeholder="Phone no" id="password1" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">CNIC no:</label>
+              <input type="text" placeholder="CNIC no" id="password2" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="">Address:</label>
+              <input type="text" placeholder="Address" id="password3" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control qualification-form-control">
+              <div class="table-form">
+                <label for="">Qualification:</label>
+                <table id="table">
+                  <tr
+                    style="
+                      background: linear-gradient(
+                        rgba(104, 18, 253, 0.356),
+                        rgba(33, 150, 243, 0.5)
+                      );
+                    "
+                  >
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                      data-label="Degree"
+                    >
+                      Degree
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                      data-label="Institute"
+                    >
+                      Institute/ Board
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                      data-label="CGPA"
+                    >
+                      Percentage / CGPA
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                      data-label="year"
+                    >
+                      Passing Year
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-control">
+                <label for="">Degree:</label>
+                <input type="text" placeholder="Degree" id="degree" />
+              </div>
+              <div class="form-control">
+                <label for="">Institue / Board:</label>
+                <input type="text" placeholder="Institute /Board" id="inst" />
+              </div>
+              <div class="form-control">
+                <label for="">Percentage /CGPA:</label>
+                <input
+                  type="text"
+                  placeholder="Percentage /CGPA"
+                  id="percent"
+                />
+              </div>
+              <div class="form-control">
+                <label for="">Passing Year:</label>
+                <input type="date" placeholder="Passing Year" id="passing" />
+              </div>
+
+              <input type="button" id="submit" value="Add to Table" />
+            </div>
+            <div class="form-control qualification-form-control">
+              <div class="table-form">
+                <label for="">Experience:</label>
+                <table id="table1">
+                  <tr
+                    style="
+                      background: linear-gradient(
+                        rgba(104, 18, 253, 0.356),
+                        rgba(33, 150, 243, 0.5)
+                      );
+                    "
+                  >
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                    >
+                      Company
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                    >
+                      Job Tile
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                    >
+                      Job Description
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                    >
+                      from
+                    </td>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-variant: small-caps;
+                        font-weight: 700;
+                      "
+                    >
+                      To
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="form-control">
+                <label for="">Company:</label>
+                <input type="text" placeholder="company" id="company" />
+              </div>
+              <div class="form-control">
+                <label for="">Job Title:</label>
+                <input type="text" placeholder="Job Title" id="job" />
+              </div>
+              <div class="form-control">
+                <label for="">Job Description:</label>
+                <input type="text" placeholder="Job Description" id="desc" />
+              </div>
+              <div class="form-control">
+                <label for="">From:</label>
+                <input type="date" placeholder="Job Description" id="year1" />
+              </div>
+              <div class="form-control to-form-control">
+                <label for="">To:</label>
+                <input type="date" placeholder="Job Description" id="year2" />
+              </div>
+              <div class="form-control">
+                <input type="checkbox" id="checkbox" />
+                <label for="">Current Working:</label>
+              </div>
+
+              <input type="button" id="submit1" value="Add to Table" />
+            </div>
+            <a href="#"
+              ><button style="margin-top: 20px" class="search-btn">
+                Add
+              </button></a
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+    <script>
+      document.getElementById("submit").onclick = function () {
+        // document.getElementById("table").style.display = "block";
+
+        var table = document.getElementById("table");
+        var row = table.insertRow(-1);
+        var degree = row.insertCell(0);
+        var inst = row.insertCell(1);
+        var percent = row.insertCell(2);
+        var passsing = row.insertCell(3);
+        degree.innerHTML = document.getElementById("degree").value;
+        inst.innerHTML = document.getElementById("inst").value;
+        percent.innerHTML = document.getElementById("percent").value;
+        passsing.innerHTML = document.getElementById("passing").value;
+
+        return false;
+      };
+
+      document.getElementById("submit1").onclick = function () {
+        // document.getElementById("table").style.display = "block";
+
+        var table = document.getElementById("table1");
+        var row = table.insertRow(-1);
+        var company = row.insertCell(0);
+        var job = row.insertCell(1);
+        var desc = row.insertCell(2);
+        var year1 = row.insertCell(3);
+        var year2 = row.insertCell(4);
+        company.innerHTML = document.getElementById("company").value;
+        job.innerHTML = document.getElementById("job").value;
+        desc.innerHTML = document.getElementById("desc").value;
+        year1.innerHTML = document.getElementById("year1").value;
+        year2.innerHTML = document.getElementById("year2").value;
+
+        return false;
+      };
+
+      const links_btn = document.querySelectorAll(".icon-text");
+      links_btn.forEach((links) => {
+        links.addEventListener("click", function () {
+          links_btn.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+      const form1 = document.querySelector(".form");
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      const password1 = document.getElementById("password1");
+      const password2 = document.getElementById("password2");
+      const password3 = document.getElementById("password3");
+
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        checkInputs();
+      });
+
+      function checkInputs() {
+        //get the values from the inputs
+        const usernameValue = username.value.trim();
+        const passwordValue = password.value.trim();
+        const password1Value = password1.value.trim();
+        const password2Value = password2.value.trim();
+        const password3Value = password3.value.trim();
+
+        if (usernameValue === "") {
+          //show error
+          //add error class
+          setErrorFor(username, "Faculty Name should be correct");
+        } else {
+          // add success class
+          setSuccessFor(username);
+        }
+        if (passwordValue === "") {
+          //show error
+          //add error class
+          setErrorFor(password, "Father name is required");
+        } else {
+          // add success class
+          setSuccessFor(password);
+        }
+        if (password1Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password1, "Phone number cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(password1);
+        }
+        if (password2Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password2, "CNIC should be valid and can't be blank");
+        } else {
+          // add success class
+          setSuccessFor(password2);
+        }
+        if (password3Value === "") {
+          //show error
+          //add error class
+          setErrorFor(password3, "Address cannot be blank");
+        } else {
+          // add success class
+          setSuccessFor(password3);
+        }
+      }
+
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement; //.form-control
+        const small = formControl.querySelector("small");
+
+        // add error message inside small
+        small.innerText = message;
+
+        // add error class
+        formControl.className = "form-control error";
+      }
+
+      function setSuccessFor(input) {
+        const formControl = input.parentElement; //.form-control
+        formControl.className = "form-control success";
+      }
+      $(document).ready(function () {
+        $("#checkbox").click(function () {
+          $(".to-form-control").toggle();
+          //   $(".to-form-control").val(" ");
+        });
+      });
+    </script>
+  </body>
+</html>

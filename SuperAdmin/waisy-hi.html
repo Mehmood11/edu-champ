@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waisy-Hi</title>
+    <link rel="stylesheet" href="waisy-hi.css" />
+    <!-- <link rel="stylesheet" href="./contact.css" /> -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus"></i>
+        <span class="logo_name"
+          ><img src="./images/logo-white-2.png" alt=""
+        /></span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#"
+            ><i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span></a
+          >
+          <!-- <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Category</a></li>
+
+          </ul> -->
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-book-open"></i>
+            <span class="link_name">Courses</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Courses</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-mail-send"></i>
+              <span class="link_name">Mailbox</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Mailbox</a></li>
+            <li><a href="#">Compose</a></li>
+            <li><a href="#">Mail Read</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-calendar"></i>
+              <span class="link_name">Calendar</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Calendar</a></li>
+            <li><a href="#">Basic Calendar</a></li>
+            <li><a href="#">List View</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-book-bookmark"></i>
+            <span class="link_name">Bookmarks</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Bookmarks</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx bx-message-rounded-dots"></i>
+            <span class="link_name">Review</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Review</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"
+            ><i class="bx bx-list-ol"></i>
+            <span class="link_name">Add listing</span></a
+          >
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Add listing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#"
+              ><i class="bx bx-user-circle"></i>
+              <span class="link_name">My Profile</span></a
+            >
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">My Profile</a></li>
+            <li><a href="#">User Profile</a></li>
+            <li><a href="#">Teacher Profile</a></li>
+          </ul>
+        </li>
+
+        <!-- <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="./images/profile/pic1.jpg" alt="" />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Khan</div>
+              <div class="job">Web designer</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+
+        <span class="text">Drop Down Sidebar</span>
+      </div>
+    </section>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (let i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement;
+          console.log(arrowParent);
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+  </body>
+</html>

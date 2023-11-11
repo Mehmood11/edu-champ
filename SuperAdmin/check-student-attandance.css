@@ -1,0 +1,65 @@
+:root {
+  --primary: #026ae3;
+}
+.hidden-table {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  display: none;
+}
+.hidden-table button {
+  padding: 8px 13px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px;
+  float: right;
+}
+.hidden-table button:hover {
+  background-color: black;
+  letter-spacing: 2px;
+}
+/* .hidden-table table {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+} */
+/* .hidden-table table thead,
+.hidden-table table thead th,
+.hidden-table table thead tbody,
+.hidden-table table thead tbody tr,
+.hidden-table table thead tbody tr td {
+  width: 100%;
+} */
+.hidden-table table caption {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+  /* font-weight: 500; */
+}
+.hidden-table table caption b {
+  color: var(--primary);
+}
+@media screen and (max-width: 1250px) {
+  .hidden-table table caption {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 460px) {
+  .hidden-table table caption {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 395px) {
+  .hidden-table table caption {
+    font-size: 11px;
+    font-weight: 600;
+  }
+}

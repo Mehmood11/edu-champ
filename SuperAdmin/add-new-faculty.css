@@ -1,0 +1,68 @@
+:root {
+  --primary: #026ae3;
+}
+.qualification-form-control {
+  display: flex;
+  flex-direction: column;
+}
+.qualification-form-control .table-form {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  align-items: center;
+}
+.qualification-form-control .table-form #table,
+.qualification-form-control .table-form #table1 {
+  width: 76%;
+}
+table {
+  /* background-color: violet; */
+  border-collapse: collapse;
+}
+table tr td {
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+input[type="button"] {
+  padding: 6px 10px;
+  margin-top: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+@media screen and (max-width: 787px) {
+  .table-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .qualification-form-control .table-form #table,
+  .qualification-form-control .table-form #table1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 595px) {
+  .qualification-form-control .table-form {
+    width: 100%;
+  }
+  table tr td {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 406px) {
+  #table1 thead th {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 2px;
+  }
+  #table1 tr td {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 2px;
+  }
+  .form-container {
+    padding: 2px;
+  }
+}
